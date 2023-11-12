@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "first-app"
+client_id = "26179e70e5491c622ff2d0c5dc1a2b45"
+application_url = "https://minute-documentation-careers-posts.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://minute-documentation-careers-posts.trycloudflare.com/auth/callback",
+  "https://minute-documentation-careers-posts.trycloudflare.com/auth/shopify/callback",
+  "https://minute-documentation-careers-posts.trycloudflare.com/api/auth/callback",
+  "https://minute-documentation-careers-posts.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-415b9ef4.myshopify.com"
